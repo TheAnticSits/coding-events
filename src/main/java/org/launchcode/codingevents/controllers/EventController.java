@@ -27,7 +27,7 @@ public class EventController {
         events.add("Spring");
         model.addAttribute("events", events);
         return "events/index";
-   
+
     }
 
 }
