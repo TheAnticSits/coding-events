@@ -17,6 +17,7 @@ import java.util.List;
 @RequestMapping("events")
 public class EventController {
 
+    private static List<String> events = new ArrayList<>();
 
     @GetMapping
     public String displayAllEvents(Model model) {
@@ -34,6 +35,12 @@ public class EventController {
     @GetMapping("create")
     public String renderCreateEventForm(){
         return "events/create";
+    }
+
+    @PostMapping
+    public String createEvent(@RequestParam String eventName){
+        events.add(eventName);
+        return "reirect:";
     }
 
 }
