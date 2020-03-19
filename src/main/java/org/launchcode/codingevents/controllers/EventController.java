@@ -32,7 +32,7 @@ public class EventController {
         return "events/create";
     }
 
-    @PostMapping
+    @PostMapping("create")
     public String createEvent(@RequestParam String eventName){
         events.add(eventName);
         return "reirect:";
