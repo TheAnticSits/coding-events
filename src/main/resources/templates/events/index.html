@@ -3,13 +3,9 @@
 
 <head th:replace="fragments :: head"></head>
 
-<body>
+<body class="container">
 
-<h1>All Events</h1>
-
-<nav th:replace="fragments :: navigation"></nav>
-
-<p th:unless="${events} and ${events.size()}">No Events!</p>
+<header th:replace="fragments :: header"></header>
 
 <ul>
     <th:block th:each="event : ${events}">
