@@ -7,11 +7,16 @@
 
 <header th:replace="fragments :: header"></header>
 
-<ul>
-    <th:block th:each="event : ${events}">
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tr th:each="event : ${events}">
         <li th:text="${event}"></li>
-    </th:block>
-</ul>
+    </tr>
+</table>
 
 </body>
 </html>
