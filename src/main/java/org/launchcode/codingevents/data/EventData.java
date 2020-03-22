@@ -12,9 +12,13 @@ public class EventData {
 
     // get all events
 
+
     // get a single event
 
     // add an event
+    public static void add(Event event){
+     //   events.put(events.getId(), event);
+    }
 
     // remove an event
 
