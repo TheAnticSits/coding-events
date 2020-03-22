@@ -14,6 +14,9 @@ public class EventData {
 
 
     // get a single event
+    public static Event getById(int id){
+        return events.get(id);
+    }
 
     // add an event
     public static void add(Event event){
