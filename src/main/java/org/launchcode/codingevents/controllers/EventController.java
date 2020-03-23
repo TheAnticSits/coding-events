@@ -46,7 +46,7 @@ public class EventController {
     }
 
     @PostMapping("delete")
-    public String processDeleteEventsForm(@RequestParam int[] eventIds){
+    public String processDeleteEventsForm(@RequestParam(required = false) int[] eventIds){
 
         for(int id : eventIds){
             EventData.remove(id);
