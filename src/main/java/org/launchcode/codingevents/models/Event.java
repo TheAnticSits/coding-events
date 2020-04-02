@@ -10,13 +10,14 @@ public class Event {
     private int id;
     private static int nextId = 1;
 
-
+    @NotBlank
+    @Size(min = 3, max = 50, message = "Name must be between 3 to 50 characters.")
     private String name;
 
-
+    @Size(max = 500, message = "Description too Long")
     private String description;
 
-
+    @Email(message="Invalid email. Try again.")
     private String contactEmail;
 
     public Event(String name, String description, String contactEmail) {
