@@ -2,3 +2,8 @@ body {
   font-size: 25px;
   color : purple;
 }
+
+.error{
+font-size: 25px;
+color: red;
+}
