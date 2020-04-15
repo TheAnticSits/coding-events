@@ -30,7 +30,7 @@ public class EventController {
     public String displayCreateEventForm(Model model) {
         model.addAttribute("title", "Create Event");
         model.addAttribute(new Event());
-        model.addAttribute(EventType.values());
+        model.addAttribute("types", EventType.values());
         return "events/create";
     }
 
