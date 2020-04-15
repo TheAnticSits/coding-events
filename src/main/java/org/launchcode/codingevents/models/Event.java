@@ -21,10 +21,13 @@ public class Event {
     @Email(message="Invalid email. Try again.")
     private String contactEmail;
 
-    public Event(String name, String description, String contactEmail) {
+    private EventType type;
+
+    public Event(String name, String description, String contactEmail, EventType type) {
         this.name = name;
         this.description = description;
         this.contactEmail = contactEmail;
+        this.type = type;
         this.id = nextId;
         nextId++;
     }
